@@ -108,6 +108,11 @@
       animation: butterfly-ambient-glow 4s ease-in-out infinite;
     }
 
+    .butterfly-field .butterfly-free:nth-child(odd) {
+      -webkit-transform: scaleX(-1); /* Chrome, Safari, Opera */
+      transform: scaleX(-1);         /* Standard syntax */
+    }
+
     @keyframes butterfly-ambient-glow {
       0%, 100% {
         filter: 
@@ -401,6 +406,8 @@
         butterfly-float 7s ease-in-out infinite,
         butterfly-glow 5s ease-in-out infinite;
     }
+    
+    .butterfly-img 
 
     @keyframes butterfly-float {
       0%,100% { transform: translate3d(0,0,0) rotate(-4deg) scale(1); }
@@ -1187,8 +1194,8 @@
 
 <script>
   // ===== CONFIG =====
-  const URL_LEADERBOARD = "https://shefest-a.festie.app/wall";
-  const URL_RESULT_BASE = "https://shefest-c.festie.app/results/candidates/";
+  const URL_LEADERBOARD = "https://shefest.festie.app/wall";
+  const URL_RESULT_BASE = "https://shefest.festie.app/results/candidates/";
 
   const VIEW_TIMEOUT_MS = 7 * 60 * 1000;
   const NO_SCAN_TIMEOUT_MS = 20 * 60 * 1000;
